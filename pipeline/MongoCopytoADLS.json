@@ -1,5 +1,5 @@
 {
-	"name": "MongoCopy",
+	"name": "MongoCopytoADLS",
 	"properties": {
 		"activities": [
 			{
@@ -50,6 +50,11 @@
 				]
 			}
 		],
+		"parameters": {
+			"collectionname": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"lastPublishTime": "2025-06-03T01:03:50Z"
 	},
