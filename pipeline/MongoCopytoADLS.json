@@ -35,7 +35,10 @@
 						"referenceName": "MongoDbAtlasMiriatech",
 						"type": "DatasetReference",
 						"parameters": {
-							"collectionname": "candidate"
+							"collectionname": {
+								"value": "@pipeline().parameters.collectionname",
+								"type": "Expression"
+							}
 						}
 					}
 				],
@@ -52,6 +55,9 @@
 		],
 		"parameters": {
 			"collectionname": {
+				"type": "string"
+			},
+			"adlsfoldername": {
 				"type": "string"
 			}
 		},
