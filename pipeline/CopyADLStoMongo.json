@@ -16,36 +16,33 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "MongoDbAtlasSource",
-						"batchSize": 100
-					},
-					"sink": {
-						"type": "JsonSink",
+						"type": "JsonSource",
 						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings"
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
-							"type": "JsonWriteSettings"
+							"type": "JsonReadSettings"
 						}
+					},
+					"sink": {
+						"type": "MongoDbAtlasSink",
+						"writeBatchTimeout": "00:30:00",
+						"writeBehavior": "insert"
 					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
-						"referenceName": "MongoDbAtlasMiriatech",
-						"type": "DatasetReference",
-						"parameters": {
-							"collectionname": "candidate"
-						}
+						"referenceName": "ADLSJson",
+						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "ADLSJson",
-						"type": "DatasetReference",
-						"parameters": {
-							"foldername": "candidate"
-						}
+						"referenceName": "MongoDbAtlasMiriatech",
+						"type": "DatasetReference"
 					}
 				]
 			}
