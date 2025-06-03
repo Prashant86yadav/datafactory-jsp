@@ -12,7 +12,13 @@
 		},
 		"annotations": [],
 		"type": "MongoDbAtlasCollection",
-		"schema": []
+		"schema": [],
+		"typeProperties": {
+			"collection": {
+				"value": "@dataset().collectionname",
+				"type": "Expression"
+			}
+		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
 }
