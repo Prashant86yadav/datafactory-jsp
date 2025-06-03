@@ -14,7 +14,10 @@
 		"type": "MongoDbAtlasCollection",
 		"schema": [],
 		"typeProperties": {
-			"collection": "candidates"
+			"collection": {
+				"value": "@dataset().collectionname",
+				"type": "Expression"
+			}
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
