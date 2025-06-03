@@ -58,10 +58,12 @@
 		],
 		"parameters": {
 			"collectionname": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "peergroups"
 			},
 			"adlsfoldername": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "peergroups"
 			}
 		},
 		"annotations": [],
