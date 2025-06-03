@@ -33,13 +33,19 @@
 				"inputs": [
 					{
 						"referenceName": "MongoDbAtlasMiriatech",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"collectionname": "candidate"
+						}
 					}
 				],
 				"outputs": [
 					{
 						"referenceName": "ADLSJson",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"foldername": "devmongojobs"
+						}
 					}
 				]
 			}
