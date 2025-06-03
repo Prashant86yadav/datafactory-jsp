@@ -1,0 +1,16 @@
+{
+	"name": "devjsp-datafactory",
+	"properties": {
+		"globalConfigurations": {
+			"PipelineBillingEnabled": "false",
+			"factoryStagingLSReferenceName": "AzureDataLakeStorage1",
+			"factoryStagingLSType": "LinkedServiceReference"
+		}
+	},
+	"location": "australiaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6517ee0b-8184-40b0-92fc-d4b74ea24d70",
+		"tenantId": "f970af23-854b-4903-820c-6ed7a2355fa8"
+	}
+}
