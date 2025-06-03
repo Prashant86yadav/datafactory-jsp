@@ -47,7 +47,10 @@
 						"referenceName": "ADLSJson",
 						"type": "DatasetReference",
 						"parameters": {
-							"foldername": "candidate"
+							"foldername": {
+								"value": "@pipeline().parameters.adlsfoldername",
+								"type": "Expression"
+							}
 						}
 					}
 				]
