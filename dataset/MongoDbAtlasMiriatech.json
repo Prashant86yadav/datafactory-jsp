@@ -5,6 +5,11 @@
 			"referenceName": "MongoDbAtlas1",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"collectionname": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "MongoDbAtlasCollection",
 		"schema": [],
