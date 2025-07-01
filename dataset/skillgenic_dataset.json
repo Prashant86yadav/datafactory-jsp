@@ -1,0 +1,15 @@
+{
+	"name": "skillgenic_dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SkillGenix",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "MongoDbAtlasCollection",
+		"schema": [],
+		"typeProperties": {
+			"collection": "lms_coursera"
+		}
+	}
+}
