@@ -59,11 +59,11 @@
 		"parameters": {
 			"collectionname": {
 				"type": "string",
-				"defaultValue": "peergroups"
+				"defaultValue": "skillgenix"
 			},
 			"adlsfoldername": {
 				"type": "string",
-				"defaultValue": "peergroups"
+				"defaultValue": "lms_coursera"
 			}
 		},
 		"annotations": [],
